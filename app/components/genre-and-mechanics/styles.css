@@ -1,0 +1,48 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: unset;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide img {
+  z-index: -1;
+}
+
+.swiper-pagination {
+  bottom: 0;
+  position: relative;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 10px;
+  color: transparent;
+  opacity: 1;
+  background: transparent;
+  .active {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  .non-active {
+    display: none;
+  }
+  .active {
+    display: unset;
+  }
+}
